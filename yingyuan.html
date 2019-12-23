@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1578459_iflqodbm25.css" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">影院</h1>
+		</header>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item " href="./maizuo.html">
+				<div class="iconfont icon-weibiaoti-"></div>
+				<div class="mui-tab-label">电影</div>
+			</a>
+			<a class="mui-tab-item mui-active" >
+				<div class="iconfont icon-huabankaobei"></div>
+				<div class="mui-tab-label">影院</div>
+			</a>
+			<a class="mui-tab-item" href="./zixun.html">
+				<div class="iconfont icon-zixun"></div>
+				<div class="mui-tab-label">咨讯</div>
+			</a>
+			<a class="mui-tab-item" href="./wode.html">
+				<div class="iconfont icon-wode"></div>
+				<div class="mui-tab-label">我的</div>
+			</a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui("body").on("tap","a",function(){
+				document.location.href = this.href;
+			})
+	</body>
+</html>
